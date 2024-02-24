@@ -14,4 +14,4 @@ The navigation bar in this repository is designed to provide an intuitive and vi
 
 Feel free to explore the repository and dive into the world of CSS properties. Whether you're a beginner looking to understand the basics or an experienced developer seeking advanced techniques, this repository has something for everyone.
 
-Visit the [Important CSS Properties](#) page and enjoy learning! Happy coding! 🚀
+Visit the [Important CSS Properties]((https://sivamshorahiya.github.io/css-a-to-z-properties/)https://sivamshorahiya.github.io/css-a-to-z-properties/) page and enjoy learning! Happy coding! 🚀
