@@ -1,0 +1,2190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS PROPERTIES DOCUMENT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- navigation bar --> 
+  <nav id="navbar">
+    <header>CSS PROPERTIES</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#a_Properties">a Properties</a></li>
+      <li><a class="nav-link" href="#b_Properties">b Properties</a></li>
+      <li><a class="nav-link" href="#c_Properties">c Properties</a></li>
+      <li><a class="nav-link" href="#d_Properties">d Properties</a></li>
+      <li><a class="nav-link" href="#e_Properties">e Properties</a></li>
+      <li><a class="nav-link" href="#f_Properties">f Properties</a></li>
+      <li><a class="nav-link" href="#g_Properties">g Properties</a></li>
+      <li><a class="nav-link" href="#h_Properties">h Properties</a></li>
+      <li><a class="nav-link" href="#i_Properties">i Properties</a></li>
+      <li><a class="nav-link" href="#j_Properties">j Properties</a></li>
+      <li><a class="nav-link" href="#k_Properties">k Properties</a></li>
+      <li><a class="nav-link" href="#l_Properties">l Properties</a></li>
+      <li><a class="nav-link" href="#m_Properties">m Properties</a></li>
+      <li><a class="nav-link" href="#n_Properties">n Properties</a></li>
+      <li><a class="nav-link" href="#o_Properties">o Properties</a></li>
+      <li><a class="nav-link" href="#p_Properties">p Properties</a></li>
+      <li><a class="nav-link" href="#q_Properties">q Properties</a></li>
+      <li><a class="nav-link" href="#r_Properties">r Properties</a></li>
+      <li><a class="nav-link" href="#s_Properties">s Properties</a></li>
+      <li><a class="nav-link" href="#t_Properties">t Properties</a></li>
+      <li><a class="nav-link" href="#u_Properties">u Properties</a></li>
+      <li><a class="nav-link" href="#v_Properties">v Properties</a></li>
+      <li><a class="nav-link" href="#w_Properties">w Properties</a></li>
+      <li><a class="nav-link" href="#z_Properties">z Properties</a></li>
+      <!-- Add more navigation links as needed -->
+    </ul>
+  </nav>
+  
+  <!-- main content -->
+  <main id="main-doc">
+
+    <!-- article -->
+    <article>
+
+      <!-- Introduction -->
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>Cascading Style Sheets (CSS) is a cornerstone technology in web development, allowing developers to control the presentation and layout of web pages. This document serves as a comprehensive guide to important CSS properties, organized in a dictionary-style format for easy reference.</p>
+      </section>
+
+      <!-- aProperties -->
+      <section id="a_Properties" class="main-section">
+        <header>a Properties</header>
+        <ul>
+          <li><p id="propname">animation:</p>
+          <sub>
+            <p id="propdesc">The animation property in CSS can be used to animate elements in a more interesting and complex manner. It allows for the animation of multiple properties at the same time, and can be used to create complex animations with keyframes.</p>
+            <p id="propexample">Example:</p>
+            
+              <code>
+                <pre>
+                  .element {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example;
+                    animation-duration: 4s;
+                  }
+                  @keyframes example {
+                    0%   {left: 0px; top: 0px;}
+                    25%  {left: 200px; top: 0px;}
+                    50%  {left: 200px; top: 200px;}
+                    75%  {left: 0px; top: 200px;}
+                    100% {left: 0px; top: 0px;}
+                  }
+                </pre>
+              </code>
+        </li>
+        <li><p id="propname">align-content:</p></li>
+          <sub>
+            <p id="propdesc">Used in flexbox and grid layouts, this property aligns the flex lines or grid tracks within the content area of a flex or grid container when there's extra space</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .container {
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-content: space-between;
+                }
+              </pre>
+            </code>
+          </sub>
+        <li><p id="propname">align-items:</p></li>
+          <sub>
+            <p id="propdesc">Used in flexbox and grid layouts, this property aligns the items within the flex container or grid container along the cross axis, which is the vertical axis for a row-based flex container, and the horizontal axis for a column-based flex container.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .container {
+                  display: flex;
+                  align-items: center;
+                }
+              </pre>
+            </code>
+          </sub>
+        <li><p id="propname">align-self:</p></li>
+          <sub>
+            <p id="propdesc">Used in flexbox and grid layouts, this property aligns a single item in the flex container or grid container along the cross axis, overriding the align-items value.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .item {
+                  align-self: flex-end;
+                }
+              </pre>
+            </code>
+          </sub>
+        <li><p id="propname">all:</p></li>
+          <sub>
+            <p id="propdesc">The all property in CSS resets all properties to their initial values, or in the case of shorthands, to their individual initial values.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  all: initial;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- bProperties -->
+      <section  id="b_Properties" class="main-section">
+        <header>b Properties</header>
+        <ul>
+          <li><p id="propname">backdrop-filter:</p></li>
+          <sub>
+            <p id="propdesc">The backdrop-filter property in CSS applies filter effects to the area behind an element. This property is often used to create frosted glass effects, particularly on top of background images.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  backdrop-filter: blur(10px);
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background:</p></li>
+          <sub>
+            <p id="propdesc">The background property in CSS is used to set the background of an element. It can be used to set the background color, image, and position, among other properties.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background: #f0f0f0 url('image.jpg') no-repeat center center;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background-attachment:</p></li>
+          <sub>
+            <p id="propdesc">The background-attachment property in CSS specifies whether the background image is fixed with regard to the viewport, or scrolls along with the element's contents.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background-attachment: fixed;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background-clip:</p></li>
+          <sub>
+            <p id="propdesc">The background-clip property in CSS specifies whether the background image of an element should be clipped to the element's border box, padding box, or content box.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background-clip: padding-box;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background-color:</p></li>
+          <sub>
+            <p id="propdesc">The background-color property in CSS is used to set the background color of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background-color: #f0f0f0;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background-image:</p></li>
+          <sub>
+            <p id="propdesc">The background-image property in CSS is used to set the background image of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background-image: url('image.jpg');
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background-origin:</p></li>
+          <sub>
+            <p id="propdesc">The background-origin property in CSS specifies the positioning area of the background images in an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background-origin: padding-box;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background-position:</p></li>
+          <sub>
+            <p id="propdesc">The background-position property in CSS is used to set the initial position of a background image. It can be used to position the image horizontally and vertically within the element's background area.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background-position: center center;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background-repeat:</p></li>
+          <sub>
+            <p id="propdesc">The background-repeat property in CSS is used to specify how a background image should be repeated within an element's background area.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background-repeat: no-repeat;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">background-size:</p></li>
+          <sub>
+            <p id="propdesc">The background-size property in CSS is used to specify the size of a background image. It can be used to stretch or shrink the image to fit the element's background area.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  background-size: cover;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">block-size:</p></li>
+          <sub>
+            <p id="propdesc">The block-size property in CSS is used to set the size of the block-level axis of an element. It is often used to set the height of an element, depending on the writing mode of the document.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  block-size: 100px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border:</p></li>
+          <sub>
+            <p id="propdesc">The border property in CSS is used to set the border of an element. It can be used to set the width, style, and color of the border, among other properties.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border: 1px solid #000;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-width:</p></li>
+          <sub>
+            <p id="propdesc">The border-width property in CSS is used to set the width of the border of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border-width: 2px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-style:</p></li>
+          <sub>
+            <p id="propdesc">The border-style property in CSS is used to set the style of the border of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border-style: dashed;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-color:</p></li>
+          <sub>
+            <p id="propdesc">The border-color property in CSS is used to set the color of the border of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border-color: #ff0000;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-block-start:</p></li>
+          <sub>
+            <p id="propdesc">The border-block-start property in CSS is used to set the width, style, and color of the border of the block-start edge of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border-block-start: 2px solid #000;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-block-end:</p></li>
+          <sub>
+            <p id="propdesc">The border-block-end property in CSS is used to set the width, style, and color of the border of the block-end edge of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border-block-end: 2px solid #000;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-inline-start:</p></li>
+          <sub>
+            <p id="propdesc">The border-inline-start property in CSS is used to set the width, style, and color of the border of the inline-start edge of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border-inline-start: 2px solid #000;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-inline-end:</p></li>
+          <sub>
+            <p id="propdesc">The border-inline-end property in CSS is used to set the width, style, and color of the border of the inline-end edge of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border-inline-end: 2px solid #000;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-radius:</p></li>
+          <sub>
+            <p id="propdesc">The border-radius property in CSS is used to create rounded corners on an element's border.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  border-radius: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-collapse:</p></li>
+          <sub>
+            <p id="propdesc">The border-collapse property in CSS is used to specify whether the table's border and the cells' borders are collapsed into a single border or separated.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                table {
+                  border-collapse: collapse;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">border-spacing:</p></li>
+          <sub>
+            <p id="propdesc">The border-spacing property in CSS is used to set the distance between the borders of adjacent cells in a table.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                table {
+                  border-spacing: 5px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">bottom:</p></li>
+          <sub>
+            <p id="propdesc">The bottom property in CSS is used to set the bottom position of a positioned element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  position: absolute;
+                  bottom: 0;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">box-shadow:</p></li>
+          <sub>
+            <p id="propdesc">The box-shadow property in CSS is used to add shadow effects around an element's frame. It can be used to cast a drop shadow from the frame of the element, and can be used to create a shadow effect in or out of the frame.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  box-shadow: 10px 10px 5px #888888;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">box-sizing:</p></li>
+          <sub>
+            <p id="propdesc">The box-sizing property in CSS is used to alter the default CSS box model used to calculate width and height of the elements.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  box-sizing: border-box;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- cProperties -->
+      <section id="c_Properties" class="main-section">
+        <header>c Properties</header>
+        <ul>
+          <li><p id="propname">color:</p></li>
+          <sub>
+            <p id="propdesc">The color property in CSS is used to set the color of the text content of an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  color: #ff0000;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">clear:</p></li>
+          <sub>
+            <p id="propdesc">The clear property in CSS is used to specify whether an element should be moved below (cleared) floating elements that precede it.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  clear: both;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">cursor:</p></li>
+          <sub>
+            <p id="propdesc">The cursor property in CSS is used to specify the type of cursor to be displayed when pointing over an element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  cursor: pointer;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">clip:</p></li>
+          <sub>
+            <p id="propdesc">The clip property in CSS is used to specify a visible region of an element. It is often used to hide a part of an element that is not needed.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  position: absolute;
+                  clip: rect(0px,60px,200px,0px);
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">content:</p></li>
+          <sub>
+            <p id="propdesc">The content property in CSS is used to insert generated content before or after an element's content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element::before {
+                  content: "Hello";
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">counter-*:</p></li>
+          <sub>
+            <p id="propdesc">The counter-* properties in CSS are used to create and control counters, which are used to increment or decrement values associated with elements.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element::before {
+                  counter-increment: my-counter;
+                  content: counter(my-counter);
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">column-*:</p></li>
+          <sub>
+            <p id="propdesc">The column-* properties in CSS are used to control the layout of content in multi-column elements.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  column-count: 3;
+                  column-gap: 20px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">columns:</p></li>
+          <sub>
+            <p id="propdesc">The columns property in CSS is used to specify the number of columns an element should be divided into and the width of the columns.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  columns: 3 200px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">caret-color:</p></li>
+          <sub>
+            <p id="propdesc">The caret-color property in CSS is used to set the color of the cursor (caret) in inputs, textareas, or any element that is editable.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                input {
+                  caret-color: red;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">content-visibility:</p></li>
+          <sub>
+            <p id="propdesc">The content-visibility property in CSS is used to control the rendering behavior of an element's content, allowing it to be skipped or rendered lazily.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  content-visibility: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">contain:</p></li>
+          <sub>
+            <p id="propdesc">The contain property in CSS is used to indicate that the element's subtree is independent of the rest of the page, and can be treated as a single unit.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  contain: layout;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- dProperties -->
+      <section id="d_Properties" class="main-section">
+        <header>d Properties</header>
+        <ul>
+          <li><p id="propname">display:</p></li>
+          <sub>
+            <p id="propdesc">The display property in CSS is used to specify the type of rendering box used for an element. It can be used to change the default behavior of an element, such as making it a block-level or inline-level element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  display: block;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">direction:</p></li>
+          <sub>
+            <p id="propdesc">The direction property in CSS is used to specify the direction of the text content of an element. It can be used to change the direction of the text from left-to-right to right-to-left, or vice versa.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  direction: rtl;
+                }
+              </pre>
+            </code>
+          </sub>
+      </section>
+
+      <!-- eProperties -->
+      <section id="e_Properties" class="main-section">
+        <header>e Properties</header>
+        <ul>
+          <li><p id="propname">empty-cells:</p></li>
+          <sub>
+            <p id="propdesc">The empty-cells property in CSS is used to specify whether or not to display borders and background on empty cells in a table.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                table {
+                  empty-cells: hide;
+                }
+              </pre>
+            </code>
+          </sub>
+      </section>
+
+      <!-- fProperties -->
+      <section id="f_Properties" class="main-section">
+                <header>f Properties</header>
+                <ul>
+                  <li><p id="propname">flex:</p></li>
+                  <sub>
+                    <p id="propdesc">The flex property in CSS is used to specify the ability of a flex item to alter its dimensions to fill the available space. It can be used to set the initial size of a flex item, and to allow it to grow or shrink to fit the available space.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .item {
+                          flex: 1;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">flex-basis:</p></li>
+                  <sub>
+                    <p id="propdesc">The flex-basis property in CSS is used to specify the initial size of a flex item, before any available space is distributed according to the flex factors.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .item {
+                          flex-basis: 100px;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">flex-direction:</p></li>
+                  <sub>
+                    <p id="propdesc">The flex-direction property in CSS is used to specify the direction of the main axis of a flex container. It can be used to set the direction of the flex container as row or column.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .container {
+                          flex-direction: row;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">flex-flow:</p></li>
+                  <sub>
+                    <p id="propdesc">The flex-flow property in CSS is a shorthand property for setting the flex-direction and flex-wrap properties of a flex container.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .container {
+                          flex-flow: row wrap;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">flex-grow:</p></li>
+                  <sub>
+                    <p id="propdesc">The flex-grow property in CSS is used to specify the ability of a flex item to grow and fill the available space in a flex container. It determines how much the flex item will grow relative to other flex items.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .item {
+                          flex-grow: 1;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">flex-shrink:</p></li>
+                  <sub>
+                    <p id="propdesc">The flex-shrink property in CSS is used to specify the ability of a flex item to shrink and occupy less space in a flex container. It determines how much the flex item will shrink relative to other flex items.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .item {
+                          flex-shrink: 0;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">float:</p></li>
+                  <sub>
+                    <p id="propdesc">The float property in CSS is used to specify whether an element should float to the left, right, or not at all. It is commonly used to create layouts where elements are positioned side by side.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .element {
+                          float: left;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">font-family:</p></li>
+                  <sub>
+                    <p id="propdesc">The font-family property in CSS is used to specify the font family or list of font families for text content. It determines the typeface or font face that will be used to render the text.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .element {
+                          font-family: Arial, sans-serif;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">font-size:</p></li>
+                  <sub>
+                    <p id="propdesc">The font-size property in CSS is used to specify the size of the font for text content. It determines the height of the characters in the text.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .element {
+                          font-size: 16px;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">font-style:</p></li>
+                  <sub>
+                    <p id="propdesc">The font-style property in CSS is used to specify the style of the font for text content. It can be used to make the text italic, oblique, or normal.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .element {
+                          font-style: italic;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                  <li><p id="propname">font-weight:</p></li>
+                  <sub>
+                    <p id="propdesc">The font-weight property in CSS is used to specify the weight or thickness of the font for text content. It can be used to make the text bold, normal, or lighter.</p>
+                    <p id="propexample">Example:</p>
+                    <code>
+                      <pre>
+                        .element {
+                          font-weight: bold;
+                        }
+                      </pre>
+                    </code>
+                  </sub>
+                </ul>
+      </section>
+
+      <!-- gProperties -->
+      <section id="g_Properties" class="main-section">
+        <header>g Properties</header>
+        <ul>
+          <li><p id="propname">gap:</p></li>
+          <sub>
+            <p id="propdesc">The gap property in CSS is used to specify the size of the gap between grid rows and columns in a grid layout.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .container {
+                  display: grid;
+                  gap: 20px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">grid:</p></li>
+          <sub>
+            <p id="propdesc">The grid property in CSS is a shorthand property for setting the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow properties of a grid container.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .container {
+                  display: grid;
+                  grid: 100px / auto auto;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">grid-area:</p></li>
+          <sub>
+            <p id="propdesc">The grid-area property in CSS is used to specify a grid item's size and location within a grid layout, and to assign a name to the item for use with grid-template-areas.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .item {
+                  grid-area: header;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">grid-auto-columns:</p></li>
+          <sub>
+            <p id="propdesc">The grid-auto-columns property in CSS is used to specify the size of the implicit grid columns in a grid layout.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .container {
+                  display: grid;
+                  grid-auto-columns: 100px;
+                }
+              </pre>
+            </code>
+          </sub>
+      </section>
+
+      <!-- hProperties -->
+      <section id="h_Properties" class="main-section">
+        <header>h Properties</header>
+        <ul>
+          <li><p id="propname">height:</p></li>
+          <sub>
+            <p id="propdesc">The height property in CSS is used to set the height of an element's content area. It can be used to set the height of an element in pixels, ems, percentages, and other units.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  height: 100px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">hyphens:</p></li>
+          <sub>
+            <p id="propdesc">The hyphens property in CSS is used to specify whether or not words in a block of text can be split to allow for hyphenation when the text is justified.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  hyphens: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- iProperties -->
+<section id="i_Properties" class="main-section">
+  <header>i Properties</header>
+  <ul>
+      <li>
+          <p id="propname">image-rendering:</p>
+          <sub>
+              <p id="propdesc">The image-rendering property in CSS is used to specify the quality of the image rendering, and to optimize the rendering of images at different resolutions and pixel densities.</p>
+              <p id="propexample">Example:</p>
+              <code>
+                  <pre>
+.element {
+  image-rendering: pixelated;
+}
+                  </pre>
+              </code>
+          </sub>
+      </li>
+      <li>
+          <p id="propname">isolation:</p>
+          <sub>
+              <p id="propdesc">The isolation property in CSS is used to specify whether an element's content should create a new stacking context, or be rendered as part of the parent stacking context.</p>
+              <p id="propexample">Example:</p>
+              <code>
+                  <pre>
+.element {
+  isolation: isolate;
+}
+                  </pre>
+              </code>
+          </sub>
+      </li>
+      <li>
+          <p id="propname">initial:</p>
+          <sub>
+              <p id="propdesc">The initial property in CSS is used to set a CSS property to its default value specified by the browser.</p>
+              <p id="propexample">Example:</p>
+              <code>
+                  <pre>
+.element {
+  font-size: initial;
+}
+                  </pre>
+              </code>
+          </sub>
+      </li>
+      <li>
+          <p id="propname">inherit:</p>
+          <sub>
+              <p id="propdesc">The inherit property in CSS is used to specify that a property should inherit its value from its parent element.</p>
+              <p id="propexample">Example:</p>
+              <code>
+                  <pre>
+.element {
+  color: inherit;
+}
+                  </pre>
+              </code>
+          </sub>
+      </li>
+  </ul>
+</section>
+
+      <!-- jProperties -->
+      <section id="j_Properties" class="main-section">
+        <header>j Properties</header>
+        <ul>
+          <li><p id="propname">justify-content:</p></li>
+          <sub>
+            <p id="propdesc">The justify-content property in CSS is used to align the flex items or grid items along the main axis of the flex container or grid container.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .container {
+                  display: flex;
+                  justify-content: space-between;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- kProperties -->
+      <section id="k_Properties" class="main-section">
+        <header>k Properties</header>
+        <ul>
+          <li><p id="propname">keyframes:</p></li>
+          <sub>
+            <p id="propdesc">The keyframes property in CSS is used to define the animation keyframes for the @keyframes rule. It is used to specify the animation code for each keyframe, which is used to create complex animations with the animation property.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- lProperties -->
+      <section id="l_Properties" class="main-section">
+        <header>l Properties</header>
+        <ul>
+          <li><p id="propname">left:</p></li>
+          <sub>
+            <p id="propdesc">The left property in CSS is used to set the left position of a positioned element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  position: absolute;
+                  left: 0;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">letter-spacing:</p></li>
+          <sub>
+            <p id="propdesc">The letter-spacing property in CSS is used to specify the space between the characters in a text content. It can be used to increase or decrease the space between characters.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  letter-spacing: 2px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">line-height:</p></li>
+          <sub>
+            <p id="propdesc">The line-height property in CSS is used to specify the height of a line of text content. It can be used to set the distance between lines of text, and to change the height of the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  line-height: 1.5;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">list-style:</p></li>
+          <sub>
+            <p id="propdesc">The list-style property in CSS is a shorthand property for setting the list-style-type, list-style-position, and list-style-image properties of a list item marker.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  list-style: square inside url('image.jpg');
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">list-style-image:</p></li>
+          <sub>
+            <p id="propdesc">The list-style-image property in CSS is used to specify an image to be used as the list item marker, instead of the default marker.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  list-style-image: url('image.jpg');
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">list-style-position:</p></li>
+          <sub>
+            <p id="propdesc">The list-style-position property in CSS is used to specify the position of the list item marker, inside or outside the content flow.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  list-style-position: inside;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">list-style-type:</p></li> 
+          <sub>
+            <p id="propdesc">The list-style-type property in CSS is used to specify the type of list item marker to be used for the list items.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  list-style-type: square;
+                }
+              </pre>
+            </code>
+          </sub>
+      </section>
+
+      <!-- mProperties -->
+      <section id="m_Properties" class="main-section">
+        <header>m Properties</header>
+        <ul>
+          <li><p id="propname">margin:</p></li>
+          <sub>
+            <p id="propdesc">The margin property in CSS is used to set the margin area on all four sides of an element. It can be used to set the margin in pixels, ems, percentages, and other units.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  margin: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">margin-block-start:</p></li>
+          <sub>
+            <p id="propdesc">The margin-block-start property in CSS is used to set the margin on the block-start edge of an element. It is often used to create space between the element and its preceding element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  margin-block-start: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">margin-block-end:</p></li>
+          <sub>
+            <p id="propdesc">The margin-block-end property in CSS is used to set the margin on the block-end edge of an element. It is often used to create space between the element and its following element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  margin-block-end: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">margin-inline-start:</p></li>
+          <sub>
+            <p id="propdesc">The margin-inline-start property in CSS is used to set the margin on the inline-start edge of an element. It is often used to create space between the element and its preceding element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  margin-inline-start: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">margin-inline-end:</p></li>
+          <sub>
+            <p id="propdesc">The margin-inline-end property in CSS is used to set the margin on the inline-end edge of an element. It is often used to create space between the element and its following element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  margin-inline-end: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">max-height:</p></li>
+          <sub>
+            <p id="propdesc">The max-height property in CSS is used to set the maximum height of an element's content area. It can be used to prevent the element from becoming larger than the specified height.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  max-height: 100px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">max-width:</p></li>
+          <sub>
+            <p id="propdesc">The max-width property in CSS is used to set the maximum width of an element's content area. It can be used to prevent the element from becoming larger than the specified width.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  max-width: 100px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">min-height:</p></li>
+          <sub>
+            <p id="propdesc">The min-height property in CSS is used to set the minimum height of an element's content area. It can be used to prevent the element from becoming smaller than the specified height.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  min-height: 100px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">min-width:</p></li>
+          <sub>
+            <p id="propdesc">The min-width property in CSS is used to set the minimum width of an element's content area. It can be used to prevent the element from becoming smaller than the specified width.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  min-width: 100px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">mix-blend-mode:</p></li>
+          <sub>
+            <p id="propdesc">The mix-blend-mode property in CSS is used to specify how the content of an element should blend with the content of the element's parent and the element's background.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  mix-blend-mode: multiply;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- nProperties -->
+      <section id="n_Properties" class="main-section">
+        <header>n Properties</header>
+        <ul>
+          <li><p id="propname">nav-down:</p></li>
+          <sub>
+            <p id="propdesc">The nav-down property in CSS is used to specify the direction of the navigation focus when using the arrow-down key.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  nav-down: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">nav-left:</p></li>
+          <sub>
+            <p id="propdesc">The nav-left property in CSS is used to specify the direction of the navigation focus when using the arrow-left key.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  nav-left: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">nav-right:</p></li>
+          <sub>
+            <p id="propdesc">The nav-right property in CSS is used to specify the direction of the navigation focus when using the arrow-right key.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  nav-right: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">nav-up:</p></li>
+          <sub>
+            <p id="propdesc">The nav-up property in CSS is used to specify the direction of the navigation focus when using the arrow-up key.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  nav-up: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- oProperties -->
+      <section id="o_Properties" class="main-section">
+        <header>o Properties</header>
+        <ul>
+          <li><p id="propname">object-fit:</p></li>
+          <sub>
+            <p id="propdesc">The object-fit property in CSS is used to specify how the content of an element should be resized to fit its container. It can be used to scale the content to fill the container, or to preserve the aspect ratio of the content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  object-fit: cover;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">object-position:</p></li>
+          <sub>
+            <p id="propdesc">The object-position property in CSS is used to specify the position of the content of an element when using the object-fit property to resize the content to fit its container.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  object-position: 50% 50%;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">opacity:</p></li>
+          <sub>
+            <p id="propdesc">The opacity property in CSS is used to specify the transparency of an element's content. It can be used to make the content more or less transparent, and to create fade-in and fade-out effects.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  opacity: 0.5;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">order:</p></li>
+          <sub>
+            <p id="propdesc">The order property in CSS is used to specify the order of a flex item or grid item within a flex container or grid container. It can be used to change the order of the items without changing the source order in the HTML document.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .item {
+                  order: 1;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname ">outline:</p></li>
+          <sub>
+            <p id="propdesc">The outline property in CSS is a shorthand property for setting the outline-width, outline-style, and outline-color properties of an element's outline.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  outline: 2px solid red;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">outline-color:</p></li>
+          <sub>
+            <p id="propdesc">The outline-color property in CSS is used to specify the color of an element's outline. It can be used to change the color of the outline, and to create a visual focus indicator for interactive elements.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  outline-color: red;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">outline-offset:</p></li>
+          <sub>
+            <p id="propdesc">The outline-offset property in CSS is used to specify the space between an element's outline and its border. It can be used to create space between the outline and the border, and to prevent the outline from overlapping the border.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  outline-offset: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">outline-style:</p></li>
+          <sub>
+            <p id="propdesc">The outline-style property in CSS is used to specify the style of an element's outline. It can be used to change the style of the outline, and to create a visual focus indicator for interactive elements.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  outline-style: dashed;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">outline-width:</p></li>
+          <sub>
+            <p id="propdesc">The outline-width property in CSS is used to specify the width of an element's outline. It can be used to change the width of the outline, and to create a visual focus indicator for interactive elements.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  outline-width: 2px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">overflow:</p></li>
+          <sub>
+            <p id="propdesc">The overflow property in CSS is used to specify how the content of an element should behave when it overflows the content area. It can be used to create scrollbars, hide the overflow, or display the overflow content outside the content area.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  overflow: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">overflow-x:</p></li>
+          <sub>
+            <p id="propdesc">The overflow-x property in CSS is used to specify how the content of an element should behave when it overflows the content area horizontally.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  overflow-x: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">overflow-y:</p></li>
+          <sub>
+            <p id="propdesc">The overflow-y property in CSS is used to specify how the content of an element should behave when it overflows the content area vertically.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  overflow-y: auto;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- pProperties -->
+      <section id="p_Properties" class="main-section">
+        <header>p Properties</header>
+        <ul>
+          <li><p id="propname">padding:</p></li>
+          <sub>
+            <p id="propdesc">The padding property in CSS is used to set the padding area on all four sides of an element. It can be used to set the padding in pixels, ems, percentages, and other units.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  padding: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">padding-block-start:</p></li>
+          <sub>
+            <p id="propdesc">The padding-block-start property in CSS is used to set the padding on the block-start edge of an element. It is often used to create space between the element and its content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  padding-block-start: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">padding-block-end:</p></li>
+          <sub>
+            <p id="propdesc">The padding-block-end property in CSS is used to set the padding on the block-end edge of an element. It is often used to create space between the element and its content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  padding-block-end: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">padding-inline-start:</p></li>
+          <sub>
+            <p id="propdesc">The padding-inline-start property in CSS is used to set the padding on the inline-start edge of an element. It is often used to create space between the element and its content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  padding-inline-start: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">padding-inline-end:</p></li>
+          <sub>
+            <p id="propdesc">The padding-inline-end property in CSS is used to set the padding on the inline-end edge of an element. It is often used to create space between the element and its content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  padding-inline-end: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">page-break-after:</p></li>
+          <sub>
+            <p id="propdesc">The page-break-after property in CSS is used to specify the behavior of a page break after an element. It can be used to control the pagination of content when printing or displaying it in paged media.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  page-break-after: always;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">page-break-before:</p></li>
+          <sub>
+            <p id="propdesc">The page-break-before property in CSS is used to specify the behavior of a page break before an element. It can be used to control the pagination of content when printing or displaying it in paged media.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  page-break-before: always;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">page-break-inside:</p></li>
+          <sub>
+            <p id="propdesc">The page-break-inside property in CSS is used to specify the behavior of a page break inside an element. It can be used to control the pagination of content when printing or displaying it in paged media.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  page-break-inside: avoid;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">perspective:</p></li>
+          <sub>
+            <p id="propdesc">The perspective property in CSS is used to specify the distance between the z=0 plane and the viewer, and to create a 3D perspective effect for transformed elements.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  perspective: 1000px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">perspective-origin:</p></li>
+          <sub>
+            <p id="propdesc">The perspective-origin property in CSS is used to specify the position of the perspective origin, which is the point from which the viewer is looking at the 3D transformed elements.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  perspective-origin: 50% 50%;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">place-content:</p></li>
+          <sub>
+            <p id="propdesc">The place-content property in CSS is a shorthand property for setting the align-content and justify-content properties of a flex container or grid container.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .container {
+                  display: flex;
+                  place-content: center space-between;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">place-items:</p></li>
+          <sub>
+            <p id="propdesc">The place-items property in CSS is a shorthand property for setting the align-items and justify-items properties of a flex container or grid container.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .container {
+                  display: flex;
+                  place-items: center start;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">place-self:</p></li>
+          <sub>
+            <p id="propdesc">The place-self property in CSS is a shorthand property for setting the align-self and justify-self properties of a flex item or grid item.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .item {
+                  place-self: center start;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">pointer-events:</p></li>
+          <sub>
+            <p id="propdesc">The pointer-events property in CSS is used to specify whether an element should respond to pointer events, such as mouse clicks and touch events. It can be used to make an element non-interactive, or to allow it to respond to pointer events.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  pointer-events: none;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">position:</p></li>
+          <sub>
+            <p id="propdesc">The position property in CSS is used to specify the positioning method of an element. It can be used to position an element relative to its normal position in the document, or to create a new stacking context for the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  position: absolute;
+                }
+              </pre>
+            </code>
+          </sub>
+      </section>
+
+      <!-- qProperties -->
+      <section id="q_Properties" class="main-section">
+        <header>q Properties</header>
+        <ul>
+          <li><p id="propname">quotes:</p></li>
+          <sub>
+            <p id="propdesc">The quotes property in CSS is used to specify the quotation marks for the content of the q element. It can be used to change the default quotation marks, and to create custom quotation styles.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                q {
+                  quotes: "«" "»" "‹" "›";
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- rProperties -->
+      <section id="r_Properties" class="main-section">
+        <header>r Properties</header>
+        <ul>
+          <li><p id="propname">resize:</p></li>
+          <sub>
+            <p id="propdesc">The resize property in CSS is used to specify whether an element should be resizable by the user. It can be used to allow the user to resize the element horizontally, vertically, both, or none.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  resize: both;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">right:</p></li>
+          <sub>
+            <p id="propdesc">The right property in CSS is used to set the right position of a positioned element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  position: absolute;
+                  right: 0;
+                }
+              </pre>
+            </code>
+          </sub>
+      </section>
+
+      <!-- sProperties -->
+      <section id="s_Properties" class="main-section">
+        <header>s Properties</header>
+        <ul>
+          <li><p id="propname">scroll-behavior:</p></li>
+          <sub>
+            <p id="propdesc">The scroll-behavior property in CSS is used to specify the scrolling behavior of an element. It can be used to create smooth scrolling effects, and to control the scrolling behavior of an element when it is scrolled into view.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  scroll-behavior: smooth;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">scroll-margin:</p></li>
+          <sub>
+            <p id="propdesc">The scroll-margin property in CSS is used to specify the margin area around an element when it is scrolled into view. It can be used to create space around the element when it is scrolled into view, and to control the scrolling behavior of the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  scroll-margin: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">scroll-padding:</p></li>
+          <sub>
+            <p id="propdesc">The scroll-padding property in CSS is used to specify the padding area around an element when it is scrolled into view. It can be used to create space around the element when it is scrolled into view, and to control the scrolling behavior of the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  scroll-padding: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+
+          <li>
+            <p id="propname">shape-image-threshold:</p>
+          </li>
+          <sub>
+            <p id="propdesc">The shape-image-threshold property in CSS is used to specify the alpha channel threshold for an image used as a shape outside the content area of an element. It can be used to create a shape effect for the element's content, and to control the transparency of the shape image.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  shape-image-threshold: 0.5;
+                }
+              </pre>
+            </code>
+          </sub>
+
+          <li>
+            <p id="propname">shape-margin:</p>
+          </li>
+          <sub>
+            <p id="propdesc">The shape-margin property in CSS is used to specify the margin area around an element's shape outside the content area. It can be used to create space around the element's shape, and to control the shape effect of the element's content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  shape-margin: 10px;
+                }
+              </pre>
+            </code>
+          </sub>
+
+          <li>
+            <p id="propname">shape-outside:</p>
+          </li>
+          <sub>
+            <p id="propdesc">The shape-outside property in CSS is used to specify the shape of an element's content area, which is used to create a shape effect for the element's content. It can be used to create a shape effect for the element's content, and to control the shape of the element's content area.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  shape-outside: circle(50%);
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- tProperties -->
+      <section id="t_Properties" class="main-section">
+        <header>t Properties</header>
+        <ul>
+          <li><p id="propname">tab-size:</p></li>
+          <sub>
+            <p id="propdesc">The tab-size property in CSS is used to specify the width of the tab character in the content of an element. It can be used to change the width of the tab character, and to control the indentation of the element's content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  tab-size: 4;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">table-layout:</p></li>
+          <sub>
+            <p id="propdesc">The table-layout property in CSS is used to specify the algorithm used to lay out the table cells, rows, and columns. It can be used to control the table layout, and to create fixed or automatic table layouts.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  table-layout: fixed;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-align:</p></li>
+          <sub>
+            <p id="propdesc">The text-align property in CSS is used to specify the horizontal alignment of the text content of an element. It can be used to align the text content to the left, right, center, or justify the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-align: center;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-align-last:</p></li>
+          <sub>
+            <p id="propdesc">The text-align-last property in CSS is used to specify the horizontal alignment of the last line of the text content of an element. It can be used to align the last line of the text content to the left, right, center, or justify the last line of the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-align-last: center;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-combine-upright:</p></li>
+          <sub>
+            <p id="propdesc">The text-combine-upright property in CSS is used to specify the combination of multiple characters into a single character, and to display the combined characters in a vertical orientation.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-combine-upright: all;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-decoration:</p></li>
+          <sub>
+            <p id="propdesc">The text-decoration property in CSS is used to specify the decoration of the text content of an element. It can be used to add or remove underline, overline, line-through, and blink effects to the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-decoration: underline;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-decoration-color:</p></li>
+          <sub>
+            <p id="propdesc">The text-decoration-color property in CSS is used to specify the color of the text decoration of an element. It can be used to change the color of the text decoration, and to create custom text decoration styles.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-decoration-color: red;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-decoration-line:</p></li>
+          <sub>
+            <p id="propdesc">The text-decoration-line property in CSS is used to specify the line style of the text decoration of an element. It can be used to change the line style of the text decoration, and to create custom text decoration styles.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-decoration-line: underline;
+                }
+              </pre>
+            </code>
+
+          </sub>
+          <li><p id="propname">text-decoration-style:</p></li>
+          <sub>
+            <p id="propdesc">The text-decoration-style property in CSS is used to specify the style of the text decoration of an element. It can be used to change the style of the text decoration, and to create custom text decoration styles.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-decoration-style: dashed;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-indent:</p></li>
+          <sub>
+            <p id="propdesc">The text-indent property in CSS is used to specify the indentation of the first line of the text content of an element. It can be used to create space between the element's content and the left edge of the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-indent: 20px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-justify:</p></li>
+          <sub>
+            <p id="propdesc">The text-justify property in CSS is used to specify the justification method of the text content of an element. It can be used to justify the text content using the inter-word, inter-ideograph, inter-cluster, distribute, or kashida justification method.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-justify: inter-word;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-orientation:</p></li>
+          <sub>
+            <p id="propdesc">The text-orientation property in CSS is used to specify the orientation of the text content of an element. It can be used to display the text content in a vertical orientation, and to control the orientation of the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-orientation: upright;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-overflow:</p></li>
+          <sub>
+            <p id="propdesc">The text-overflow property in CSS is used to specify how the content of an element should behave when it overflows the content area. It can be used to create an ellipsis effect, and to control the overflow behavior of the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-overflow: ellipsis;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-rendering:</p></li>
+          <sub>
+            <p id="propdesc">The text-rendering property in CSS is used to specify the quality of the text rendering of an element. It can be used to optimize the rendering of the text content, and to create a better visual appearance for the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-rendering: optimizeLegibility;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-shadow:</p></li>
+          <sub>
+            <p id="propdesc">The text-shadow property in CSS is used to specify the shadow effect of the text content of an element. It can be used to create a shadow effect for the text content, and to control the shadow effect of the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-shadow: 2px 2px 2px red;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">text-transform:</p></li>
+          <sub>
+            <p id="propdesc">The text-transform property in CSS is used to specify the capitalization of the text content of an element. It can be used to change the capitalization of the text content to uppercase, lowercase, capitalize, or none.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  text-transform: uppercase;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">top:</p></li>
+          <sub>
+            <p id="propdesc">The top property in CSS is used to set the top position of a positioned element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  position: absolute;
+                  top: 0;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">transform:</p></li>
+          <sub>
+            <p id="propdesc">The transform property in CSS is used to specify the transformation of an element. It can be used to rotate, scale, skew, or translate the element, and to create 2D and 3D transformations.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  transform: rotate(45deg);
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">transform-box:</p></li>
+          <sub>
+            <p id="propdesc">The transform-box property in CSS is used to specify the box to which the transform property is applied. It can be used to apply the transform property to the border-box, padding-box, content-box, or fill-box of the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  transform-box: border-box;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">transform-origin:</p></li>
+          <sub>
+            <p id="propdesc">The transform-origin property in CSS is used to specify the origin of the transformation of an element. It can be used to change the origin of the transformation, and to control the transformation of the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  transform-origin: 50% 50%;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">transform-style:</p></li>
+          <sub>
+            <p id="propdesc">The transform-style property in CSS is used to specify the style of the transformation of an element. It can be used to apply the transformation to the element's children, or to create a 3D transformation effect.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  transform-style: preserve-3d;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">transition:</p></li>
+          <sub>
+            <p id="propdesc">The transition property in CSS is used to specify the transition effect of an element. It can be used to create a smooth transition effect when the element changes from one state to another state.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  transition: width 2s, height 2s;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">translate:</p></li>
+          <sub>
+            <p id="propdesc">The translate property in CSS is used to specify the translation of an element. It can be used to move the element horizontally and vertically, and to create a 2D translation effect.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  transform: translate(100px, 50px);
+                }
+              </pre>
+            </code>
+          </sub>
+      </section>
+
+      <!-- uProperties -->
+      <section id="u_Properties" class="main-section">
+        <header>u Properties</header>
+        <ul>
+          <li><p id="propname">unicode-bidi:</p></li>
+          <sub>
+            <p id="propdesc">The unicode-bidi property in CSS is used to specify the level of embedding of the text content of an element. It can be used to control the direction of the text content, and to create a visual appearance for the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  unicode-bidi: embed;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">user-select:</p></li>
+          <sub>
+            <p id="propdesc">The user-select property in CSS is used to specify whether the user can select the text content of an element. It can be used to allow the user to select the text content, or to prevent the user from selecting the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  user-select: none;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- vProperties -->
+      <section id="v_Properties" class="main-section">
+        <header>v Properties</header>
+        <ul>
+          <li><p id="propname">vertical-align:</p></li>
+          <sub>
+            <p id="propdesc">The vertical-align property in CSS is used to specify the vertical alignment of the content of an element. It can be used to align the content to the top, middle, bottom, baseline, or to create a super or sub script effect.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  vertical-align: middle;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">visibility:</p></li>
+          <sub>
+            <p id="propdesc">The visibility property in CSS is used to specify the visibility of an element. It can be used to show or hide the element, and to create a fade-in and fade-out effect.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  visibility: hidden;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- wProperties -->
+      <section id="w_Properties" class="main-section">
+        <header>w Properties</header>
+        <ul>
+          <li><p id="propname">white-space:</p></li>
+          <sub>
+            <p id="propdesc">The white-space property in CSS is used to specify how the white space inside the element should be handled. It can be used to collapse, preserve, or break the white space, and to control the wrapping of the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  white-space: nowrap;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">widows:</p></li>
+          <sub>
+            <p id="propdesc">The widows property in CSS is used to specify the minimum number of lines that should be left at the top of a page when a page break occurs. It can be used to control the pagination of content when printing or displaying it in paged media.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  widows: 2;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">width:</p></li>
+          <sub>
+            <p id="propdesc">The width property in CSS is used to specify the width of an element's content area. It can be used to set the width in pixels, ems, percentages, and other units.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  width: 100px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">will-change:</p></li>
+          <sub>
+            <p id="propdesc">The will-change property in CSS is used to specify the properties that are expected to change in the future. It can be used to optimize the rendering of the element, and to create a better visual appearance for the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  will-change: transform, opacity;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">word-break:</p></li>
+          <sub>
+            <p id="propdesc">The word-break property in CSS is used to specify how the words should be broken when the content overflows the content area. It can be used to break the words at the end of the line, or to allow the words to break at any point.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  word-break: break-all;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">word-spacing:</p></li>
+          <sub>
+            <p id="propdesc">The word-spacing property in CSS is used to specify the space between the words of the text content of an element. It can be used to change the space between the words, and to control the spacing of the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  word-spacing: 2px;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">word-wrap:</p></li>
+          <sub>
+            <p id="propdesc">The word-wrap property in CSS is used to specify how the words should be wrapped when the content overflows the content area. It can be used to wrap the words at the end of the line, or to allow the words to wrap at any point.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  word-wrap: break-word;
+                }
+              </pre>
+            </code>
+          </sub>
+          <li><p id="propname">writing-mode:</p></li>
+          <sub>
+            <p id="propdesc">The writing-mode property in CSS is used to specify the direction of the text content of an element. It can be used to display the text content in a horizontal or vertical orientation, and to control the direction of the text content.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  writing-mode: vertical-rl;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+      </section>
+
+      <!-- zProperties -->
+      <section id="z_Properties" class="main-section">
+        <header>z Properties</header>
+        <ul>
+          <li><p id="propname">z-index:</p></li>
+          <sub>
+            <p id="propdesc">The z-index property in CSS is used to specify the stack order of an element. It can be used to control the stacking order of the element, and to create a stacking context for the element.</p>
+            <p id="propexample">Example:</p>
+            <code>
+              <pre>
+                .element {
+                  z-index: 1;
+                }
+              </pre>
+            </code>
+          </sub>
+        </ul>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* Navbar styles */
+#navbar {
+  position: fixed; /* Fixed position */
+  top: 0; /* Position from the top */
+  left: 0; /* Position from the left */
+  width: 200px; /* Width of the navigation bar */
+  height: 100%; /* Full height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background: linear-gradient(to right, #4e54c8, #8f94fb); /* Gradient background */
+  border-right: 1px solid rgba(255, 255, 255, 0.2); /* Add a subtle border for separation */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: 10; /* Ensure the navbar is above other content */
+  transition: background-position 0.3s; /* Smooth transition for background animation */
+}
+
+#navbar:hover {
+  background-position: right; /* Move the background gradient to the right on hover */
+}
+
+#navbar header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: sticky; /* Sticky position */ 
+  top: 0; /* Stick to the top */
+  padding: 10px; /* Padding for header */
+  color: #fff; /* Text color */
+  font-size: 1.2em; /* Font size */
+  font-weight: bold; /* Bold font */
+  backdrop-filter: blur(5px); /* Blur effect for header */
+  z-index: 20; /* Ensure the header is above other content */
+  font-weight: bolder;
+}
+
+#navbar ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 20px 0; /* Adjust top padding */
+}
+
+#navbar ul li {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add a border bottom for separation */
+  transition: transform 0.3s; /* Smooth transition for hover animation */
+}
+
+#navbar ul li:last-child {
+  border-bottom: none; /* Remove border bottom for the last item */
+}
+
+#navbar ul li a {
+  display: block; /* Make links block level */
+  padding: 10px 20px; /* Add padding */
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+}
+
+#navbar ul li:hover {
+  transform: translateX(5px); /* Move the list item 5px to the right on hover */
+}
+
+#navbar ul li a:hover {
+  color: #00ffd5; /* Change text color on hover */
+}
+  
+  /* Main content styles */
+  #main-doc {
+    margin-left: 220px; /* Adjust to accommodate the navbar width */
+    padding: 20px;
+  }
+  
+  .main-section {
+    margin-bottom: 40px;
+  }
+  
+  .main-section header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  #propname {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 3px;
+  }
+
+  #propdesc {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  #propname:hover {
+    color: #0097a2;
+  }
+
+  #propdesc:hover {
+    color: #130065;
+  }
+
+
+/* Code block styles */
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  background: #f4f4f4;
+  padding: 0px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: block;
+  overflow-x: auto;
+}
+
+pre {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  background: #f4f4f4;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  display: block;
+  margin: 0px;
+}
+
+code:hover, pre:hover{
+  background: #000000;
+  color: #ffffff;
+}
+
+header:hover {
+  color: #0017e2;
+}
+
+
+
+
+
+
+  
+
+  
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    #navbar {
+      width: 100%;
+      position: static;
+    }
+    
+    #main-doc {
+      margin-left: 0;
+    }
+  }
+  
